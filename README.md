@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# Workout Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based workout tracker that allows users to:
 
-Currently, two official plugins are available:
+- Log max weight for warmup and workout sets.
+- Persist workout data locally in the browser using `localStorage`.
+- Track daily progress and mark workouts as completed.
+- Switch between workout days and see tailored exercises (Push/Pull/Legs split).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Persistent Storage**  
+  All user-entered data is stored in `localStorage` so it's never lost on refresh.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Day-Based Workouts**  
+  Workout plans are split across days, following a Push-Pull-Legs routine.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Complete Workouts**  
+  Mark any workout day as complete and store it locally.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Input Tracking**  
+  Track your max weights per warmup/workout exercise with responsive inputs.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Preview
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+![Alt text](./public/images/img-1.png)
+
+![Alt text](./public/images/img-1.png)
+
+![Alt text](./public/images/img-1.png)
+
+## 🛠️ Built With
+
+- ⚛️ **React** (with functional components and hooks)
+- 💅 **TailwindCSS** and **ShadCn** for styling
+- 🧠 **TypeScript** for type safety
+- 🧩 **Custom UI Components** (`Button`, `Card`, `Input`)
+- 📦 **localStorage** for state persistence
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed:
+
+```bash
+node -v
+npm -v
 ```
