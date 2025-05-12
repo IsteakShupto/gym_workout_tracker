@@ -29,15 +29,15 @@ A simple React-based workout tracker that allows users to:
 
 ![Alt text](./public/images/img-1.png)
 
-## 🛠️ Built With
+## Built With
 
-- ⚛️ **React** (with functional components and hooks)
-- 💅 **TailwindCSS** and **ShadCn** for styling
-- 🧠 **TypeScript** for type safety
-- 🧩 **Custom UI Components** (`Button`, `Card`, `Input`)
-- 📦 **localStorage** for state persistence
+- **React** (with functional components and hooks)
+- **TailwindCSS** and **ShadCn** for styling
+- **TypeScript** for type safety
+- **Custom UI Components** (`Button`, `Card`, `Input`)
+- **localStorage** for state persistence
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
